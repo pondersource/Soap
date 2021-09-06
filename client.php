@@ -5,15 +5,12 @@ class server{
   public $amount;
   public $sender;
   public $recipient;
-  ...
-  ...
 }
 
-// initialize SOAP Server
-$server=new SoapServer($wsdl,$array);
+$soap = new SoapClient($wsdl,$array);
 
-$soap->addFunction($function_name);
-
-$soap->handle([$soap_request]);
+$soap->user_function($params);
 
 ?>
+
+#
