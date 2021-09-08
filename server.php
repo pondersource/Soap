@@ -23,7 +23,8 @@ $server=new Soap_server($wsdl,$array);
 $soap->add_header();
 
 # return: -
-# parametres: function name as string
+# parametres:
+  # function name
 $soap->add_function($function_name);
 
 # return: An array of the defined functions.
@@ -35,26 +36,23 @@ $soap->get_functions($);
   # request: The SOAP request. If this argument is omitted, the request is assumed to be in the raw POST data of the HTTP request.
 $soap->handle_request([$soap_request]);
 
+# ? Sends a response to the client of the current request indicating an error.
+# return: -
+# parametres:
+  # code: the error code to return
+  # string: A string identifying the actor that caused the fault
+  # name: The name of the fault. This can be used to select a name from a WSDL file.
 $soap->handle_fault();
 
 # returns: -
 # parametres:
-  # class: the name of exported /**
-  # args: These optional parameters will be passed to the default class constructor during object creation.
-  class ClassName extends AnotherClass
-  {
-
-    function __construct(argument)
-    {
-      // code...
-    }
-  }
-
+  # class: the name of exported class
 $soap->set_class();
 
-$server->set_object(new Service());
-
-$soap->set_persistence();
+# return: -
+# parametres:
+  # object: The object to handle the requests.
+$server->set_object(object $object);
 
 
 # Notes

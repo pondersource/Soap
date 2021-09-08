@@ -12,6 +12,11 @@ A SOAP client sends the XML document to a SOAP server. This SOAP request is post
 
 The Web Services Simple Object Access Protocol (SOAP) server is an application server plug-in that receives and sends XML data, and provides XML SOAP interfaces into the Tivoli Management Services components and the monitoring agents.
 
+## Why do we need WSDL with SOAP?
+
+-an envelope, which defines the message structure[1] and how to process it
+-a set of encoding rules for expressing instances of application-defined datatypes
+-a convention for representing procedure calls and responses
 ## Functions needed for the soap Server
 
  1) public __construct()
