@@ -14,28 +14,48 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 
 ## Why do we need WSDL with SOAP?
 
--an envelope, which defines the message structure[1] and how to process it
--a set of encoding rules for expressing instances of application-defined datatypes
--a convention for representing procedure calls and responses
+- an envelope, which defines the message structure and how to process it
+
+- a set of encoding rules for expressing instances of application-defined datatypes
+
+- a convention for representing procedure calls and responses
+
+## Functions needed for the soap Client
+
+| Functions | Functionality |
+| --- | --- |
+| `construct()`| Soap Client constructor |
+| `send_request()` |  Performs a SOAP request|
+| `get_cookies()` | Get list of cookies |
+| `set_cookie()` | Defines a cookie for SOAP requests |
+| `get_functions()` | Returns list of available SOAP functions |
+| `get_types()` | Get a list of SOAP types |
+| `set_location()` | Sets the location of the web service to use |
+| `add_header()` | Add a SOAP header for subsequent calls |
+| `get_last_request()` |  return: the last SOAP request |
+| `get_last_request_headers()` | return: SOAP headers from the last response |
+| `get_last_response()` | return: last SOAP response |
+| `get_last_response_headers()` | return: SOAP headers from the last responses |
+| `set_headers()` | Set SOAP headers for subsequent calls |
+| `soap_call()` | Calls a SOAP function |
+
+
 ## Functions needed for the soap Server
 
- 1) public __construct()
+- public __construct()
 
- 2) add_header()
+- add_header()
 
- 3) add_function()
+- add_function()
 
- 4) get_functions()
+- get_functions()
 
- 5) handle_request()
+- handle_request()
 
- 6) handle_fault()
+- handle_fault()
 
- 7) set_class()
+- set_class()
 
- 8) set_object()
+- set_object()
 
- 9) set_persistence()
-
-
- ## Functions needed for the soap Client
+- set_persistence()

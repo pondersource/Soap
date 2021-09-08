@@ -1,7 +1,7 @@
 <?php
 
 // model, which uses in web service functions as parameter
-class XmlVars{
+class xmlVars{
   public $amount;
   public $sender;
   public $recipient;
