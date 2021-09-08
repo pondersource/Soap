@@ -31,7 +31,6 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 | `set_cookie()` | Defines a cookie for SOAP requests |
 | `get_functions()` | Returns list of available SOAP functions |
 | `get_types()` | Get a list of SOAP types |
-| `set_location()` | Sets the location of the web service to use |
 | `add_header()` | Add a SOAP header for subsequent calls |
 | `get_last_request()` |  return: the last SOAP request |
 | `get_last_request_headers()` | return: SOAP headers from the last response |
@@ -60,3 +59,10 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 | Keywords | explanation |
 | --- | --- |
 | `AS4`| is a message protocol based on web services to securely exchange B2B messages between trading partners|
+
+## Resources
+
+[Soap](https://www.php.net/manual/en/book.soap.php)
+[Soap Client](https://www.php.net/manual/en/class.soapclient.php)
+[Soap Server](https://www.php.net/manual/en/class.soapserver.php)
+[Soap Fault](https://www.php.net/manual/en/class.soapfault.php)
