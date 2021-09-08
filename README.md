@@ -42,13 +42,14 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 
 ## Functions needed for the soap Server
 
-| `construct()` | Soap Server constructor  |
+| Functions | Functionality |
 | --- | --- |
+| `construct()` | Soap Server constructor  |
 | `add_header()`| Adds a SOAP header to be returned with the response to the current request |
 | `add_function()` |  Adds one or more functions to handle SOAP requests|
 | `get_functions()` | Returns list of defined functions |
 | `handle_request()` | Handles a SOAP request |
-| handle_fault()` | Issue Soap Server fault indicating an error |
+| `handle_fault()` | Issue Soap Server fault indicating an error |
 | `set_class()` | Sets the class which handles SOAP requests |
 | `set_object()` | Sets the object which will be used to handle SOAP requests |
-|' set_persistence() ` | Sets Soap Server persistence mode |
+| `set_persistence() ` | Sets Soap Server persistence mode |
