@@ -20,21 +20,21 @@ $server=new Soap_server($wsdl,$array);
 # return: -
 # parametres:
   # header: the
-$soap->add_header();
+$server->add_header();
 
 # return: -
 # parametres:
   # function name
-$soap->add_function($function_name);
+$server->add_function($function_name);
 
 # return: An array of the defined functions.
 # parametres: -
-$soap->get_functions($);
+$server->get_functions($);
 
 # return:  -
 # parametres:
   # request: The SOAP request. If this argument is omitted, the request is assumed to be in the raw POST data of the HTTP request.
-$soap->handle_request([$soap_request]);
+$server->handle_request([$server_request]);
 
 # ? Sends a response to the client of the current request indicating an error.
 # return: -
@@ -42,18 +42,21 @@ $soap->handle_request([$soap_request]);
   # code: the error code to return
   # string: A string identifying the actor that caused the fault
   # name: The name of the fault. This can be used to select a name from a WSDL file.
-$soap->handle_fault();
+$server->handle_fault();
 
 # returns: -
 # parametres:
   # class: the name of exported class
-$soap->set_class();
+$server->set_class();
 
 # return: -
 # parametres:
   # object: The object to handle the requests.
 $server->set_object(object $object);
 
+# return: -
+# parametres:
+$server->set_persistence()
 
 # Notes
 # In your class, if you declare a function with the name of the header, the function will be called when that header is received.
