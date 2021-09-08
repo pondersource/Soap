@@ -66,6 +66,6 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 
 :link: [Soap Client](https://www.php.net/manual/en/class.soapclient.php)
 
-:link: [Soap Server](https:/:link:/www.php.net/manual/en/class.soapserver.php)
+:link: [Soap Server](https://www.php.net/manual/en/class.soapserver.php)
 
 :link: [Soap Fault](https://www.php.net/manual/en/class.soapfault.php)
