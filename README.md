@@ -4,11 +4,11 @@
 
 SOAP (formerly an acronym for Simple Object Access Protocol) is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks
 
-## Soap Client
+## Soap Client :mag:
 
 A SOAP client sends the XML document to a SOAP server. This SOAP request is posted using HTTP or HTTPS to a SOAP Request Handler running as a servlet on a Web server. ... A response from the service is returned to the SOAP Request Handler Servlet and then to the caller using the standard SOAP XML payload format.
 
-## Soap Server
+## Soap Server :mag:
 
 The Web Services Simple Object Access Protocol (SOAP) server is an application server plug-in that receives and sends XML data, and provides XML SOAP interfaces into the Tivoli Management Services components and the monitoring agents.
 
@@ -21,7 +21,7 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 - a convention for representing procedure calls and responses
 
 
-## Functions needed for the soap Client
+## Functions needed for the soap Client :fountain_pen:
 
 | Functions | Functionality |
 | --- | --- |
@@ -40,7 +40,7 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 | `soap_call()` | Calls a SOAP function |
 
 
-## Functions needed for the soap Server
+## Functions needed for the soap Server :fountain_pen:
 
 | Functions | Functionality |
 | --- | --- |
@@ -54,18 +54,18 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 | `set_object()` | Sets the object which will be used to handle SOAP requests |
 | `set_persistence() ` | Sets Soap Server persistence mode |
 
-# Keywords :key:
+# Keywords :old_key:
 
 | Keywords | explanation |
 | --- | --- |
 | `AS4`| is a message protocol based on web services to securely exchange B2B messages between trading partners|
 
-## Resources
+# Resources :scroll:
 
-[Soap](https://www.php.net/manual/en/book.soap.php)
+:link: [Soap](https://www.php.net/manual/en/book.soap.php)
 
-[Soap Client](https://www.php.net/manual/en/class.soapclient.php)
+:link: [Soap Client](https://www.php.net/manual/en/class.soapclient.php)
 
-[Soap Server](https://www.php.net/manual/en/class.soapserver.php)
+:link: [Soap Server](https:/:link:/www.php.net/manual/en/class.soapserver.php)
 
-[Soap Fault](https://www.php.net/manual/en/class.soapfault.php)
+:link: [Soap Fault](https://www.php.net/manual/en/class.soapfault.php)
