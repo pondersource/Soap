@@ -1,6 +1,6 @@
-# Soap server/client in php
+# Soap server-client in php :bulb:
 
-##  What Soap does
+##  What Soap does :question:
 
 SOAP (formerly an acronym for Simple Object Access Protocol) is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks
 
@@ -12,13 +12,14 @@ A SOAP client sends the XML document to a SOAP server. This SOAP request is post
 
 The Web Services Simple Object Access Protocol (SOAP) server is an application server plug-in that receives and sends XML data, and provides XML SOAP interfaces into the Tivoli Management Services components and the monitoring agents.
 
-## Why do we need WSDL with SOAP?
+## Why do we need WSDL with SOAP :question:
 
 - an envelope, which defines the message structure and how to process it
 
 - a set of encoding rules for expressing instances of application-defined datatypes
 
 - a convention for representing procedure calls and responses
+
 
 ## Functions needed for the soap Client
 
@@ -53,3 +54,9 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 | `set_class()` | Sets the class which handles SOAP requests |
 | `set_object()` | Sets the object which will be used to handle SOAP requests |
 | `set_persistence() ` | Sets Soap Server persistence mode |
+
+# Keywords :key:
+
+| Keywords | explanation |
+| --- | --- |
+| `AS4`| is a message protocol based on web services to securely exchange B2B messages between trading partners|

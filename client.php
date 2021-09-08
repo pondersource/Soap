@@ -10,42 +10,54 @@ class xmlVars{
 # ? initialize SOAP Client
 $client = new SoapClient($wsdl,$array);
 
-# Performs a SOAP request
+# ? Performs a SOAP request
+# returns: The XML SOAP response
 $client->send_request()
 
-# ? Get list of cookies
-$client->get_cookies()
+# return: List of cookies
+$client->get_cookies(): ?array
 
 # ? Defines a cookie for SOAP requests
-$client->set_cookie()
+# return: -
+# parameters: name
+  # cookie name
+  # cookie value ( If not specified, the cookie will be deleted )
+$client->set_cookie(string $name, ?string $value = null): void
 
-# ? Returns list of available SOAP functions
-$client->get_functions()
+# return: list of available SOAP functions
+$client->get_functions(): ?array
 
-# ? Get a list of SOAP types
-$client->get_types()
+# return: a list of SOAP types
+$client->get_types(): ?array
 
-# Sets the location of the web service to use
-$client->set_location()
-
-# Add a SOAP header for subsequent calls
-$client->add_header()
+# ? Add a SOAP header for subsequent calls
+# return: bool
+# parameters:
+  # headers: The headers to be set. It could be SoapHeader object or array of SoapHeader objects. If not specified or set to null, the headers will be deleted
+$client->add_headers(): bool
 
 # return: the last SOAP request
-$client->get_last_request()
+# parameters: -
+$client->get_last_request(): ?string
 
 # return: SOAP headers from the last response
-$client->get_last_request_headers()
-# calls a SOAP function
+# parameters: -
+$client->get_last_request_headers(): ?string
 
 # return: last SOAP response
-$client->get_last_response()
+# parameters: -
+$client->get_last_response(): ?string
 
 # return: SOAP headers from the last responses
-$client->get_last_response_headers()
+# parameters: -
+$client->get_last_response_headers(): ?string
 
 # ? Set SOAP headers for subsequent calls
-$client->set_headers()
+# return: Boolean
+# parameters:
+  # headers: The headers to be set. It could be SoapHeader object or array of SoapHeader objects. If not specified or set to null, the headers will be deleted.
+# Note : Calling thius method will replace any previous values
+$client->set_headers(SoapHeader|array|null $headers = null): bool
 
 # ? Calls a SOAP function
 $client->soap_call()
