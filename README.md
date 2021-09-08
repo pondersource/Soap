@@ -1,4 +1,4 @@
-# Soap_server
+# Soap server/client in php
 
 ##  What Soap does
 
@@ -12,7 +12,7 @@ A SOAP client sends the XML document to a SOAP server. This SOAP request is post
 
 The Web Services Simple Object Access Protocol (SOAP) server is an application server plug-in that receives and sends XML data, and provides XML SOAP interfaces into the Tivoli Management Services components and the monitoring agents.
 
-# Functions I need for the soap Server
+## Functions needed for the soap Server
 
  1) public __construct()
 
@@ -33,4 +33,4 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
  9) set_persistence()
 
 
- # Functions I need for the soap Client
+ ## Functions needed for the soap Client
