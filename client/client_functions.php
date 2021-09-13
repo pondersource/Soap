@@ -1,18 +1,5 @@
 <?php
 
-
-# model, which uses in web service functions as parameter
-# examples
-class xmlVars{
-  public $amount;
-  public $sender;
-  public $recipient;
-  ...
-  ...
-}
-
-
-
 # ? initialize SOAP Client
 $client = new SoapClient($wsdl,$array);
 

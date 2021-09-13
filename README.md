@@ -20,7 +20,6 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 
 - a convention for representing procedure calls and responses
 
-
 ## Functions needed for the soap Client :fountain_pen:
 
 | Functions | Functionality |
@@ -59,6 +58,7 @@ The Web Services Simple Object Access Protocol (SOAP) server is an application s
 | Keywords | explanation |
 | --- | --- |
 | `AS4`| is a message protocol based on web services to securely exchange B2B messages between trading partners|
+
 
 # Resources :scroll:
 
